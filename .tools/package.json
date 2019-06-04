@@ -1,0 +1,20 @@
+{
+  "name": "webpack-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/eduardstula/webpack-jquery",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "js:dev": "webpack --mode development --watch --progress --config ./webpack.config.js --display-error-details",
+    "js:prod": "webpack --mode production --config ./webpack.config.js"
+  }
+}
