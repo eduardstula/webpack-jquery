@@ -7,6 +7,7 @@ module.exports = {
         filename: '../scripts.min.js',
         path: path.resolve(__dirname, './')
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
@@ -27,7 +28,8 @@ module.exports = {
         ]
     },
     resolve: {
-        modules: ['../../.tools/node_modules']
+        extensions: ['.js'],
+        modules: ['../../.tools/node_modules', "./"]
     },
     plugins: [
         new webpack.ProvidePlugin({
